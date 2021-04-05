@@ -1,0 +1,60 @@
+<form [formGroup]="form">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Ingrese el Titular de la tarjeta" formControlName="titular">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Número de la tarjeta"  formControlName="numeroTarjeta">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-7">
+            <!--fecha expiracion-->
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bg-white">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="DD/MM" formControlName="fechaExpiracion">
+                </div>
+            </div>
+        
+        </div>
+        <div class="form-group col-md-5">
+            <!--cvv-->
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bg-white">
+                            <i class="fas fa-key"></i>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="CVV" formControlName="cvv">
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit">
+            <i class="fa fa-database"></i>
+            Agregar</button>
+    </div>
+</form>
